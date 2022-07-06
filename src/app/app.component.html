@@ -1,4 +1,4 @@
-<ul class="nav nav_tabs">
+<!-- <ul class="nav nav_tabs">
   <li class="nav_item">
     <a class="nav-link" href="/home">Home</a>
   </li>
@@ -10,14 +10,26 @@
   <li class="nav_item">
     <a class="nav-link" href="/settings">Settings</a>
   </li>
-</ul>
+</ul> -->
 
-<div class="card" style="width: 100rem; height:100rem ;">
-   <div class="card_body">
-      <router-outlet></router-outlet>
-   </div>
+<div>
+  <ul class="nav nav-tabs">
+    <li class="nav-item" >
+      <a class="nav-link " routerLink="/"  routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"  routerLink="/products" routerLinkActive="active">Products</a>
+    </li>
+    <li class="nav-item" >
+      <a class="nav-link"  routerLink="/settings" routerLinkActive="active" >Settings</a>
+    </li>
+  </ul>
+</div>
 
-
-
-
+  <div class="card" style="width: 100rem; height:100rem;">
+    <div class="card-body">
+    
+        <router-outlet></router-outlet>
+    
+    </div>
 </div>
